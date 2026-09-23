@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: Inter;
+    box-sizing: border-box;
 }
 
 /* Navigation Bar */
@@ -266,4 +267,65 @@
     text-transform: uppercase;
 }
 
+/* Why Choose Section */
+
+.why_choose{
+    display: flex;
+    padding: 120px 200px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    background: #230E3D;
+}
+.why_choose h2{
+    color: var(--ffffff, #FFF);
+    text-align: center;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.boxes{
+    display: grid;
+    gap: 30px;
+    grid-auto-rows: 273px;
+    grid-auto-columns: 380px;
+    grid-template-areas: 
+    "box-1 box-2 box-2"
+    "box-1 box-3 box-3"
+    "box-4 box-4 box-5";
+}
+.box{
+    display: flex;
+    /* box-sizing: border-box; */
+    padding: 40px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    border-radius: 40px;
+    background: rgba(53, 17, 101, 0.40);
+}
+.box img{
+    width: fit-content;
+}
+.box h4{
+    color: var(--ffffff, #FFF);
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.box p{
+    color: var(--ffffff, #FFF);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    opacity: 0.6;
+}
 
